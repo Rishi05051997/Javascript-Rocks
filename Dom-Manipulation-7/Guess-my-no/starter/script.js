@@ -15,7 +15,7 @@
 // console.log(document.querySelector('.guess').value);
 
 const secretNumber = Math.trunc(Math.random()*20) + 1;
-console.log(secretNumber);
+// console.log(secretNumber);
 let score = 20;
 
 
