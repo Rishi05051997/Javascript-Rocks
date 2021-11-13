@@ -20,6 +20,7 @@ const closedModalByEscapeKey = (e) => {
         closedModal();
     }
 }
+var hello = "hello";
 
 for(let i=0;i<btnsOpenModal.length;i++){
     btnsOpenModal[i].addEventListener('click', openedModal);
