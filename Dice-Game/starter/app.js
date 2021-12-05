@@ -31,16 +31,46 @@ const winMsg0El = document.querySelector(`.add-winning-message-0`)
 const winMsg1El = document.querySelector(`.add-winning-message-1`)
 
 const modelClose = document.querySelector(".close-modal");
-
+const btnSubmit = document.querySelector(".btn-submit");
 
 // const score1 = document.getElementById("score--1");
 let scores, currentScore, activePlayer, playing
 
 
 setTimeout(() => {
-  document.querySelector(".modal").classList.add('hidden');
-  document.querySelector(".overlay").classList.add('hidden');
-}, 40000);
+  document.querySelector(".modal").classList.remove('hidden');
+  document.querySelector(".overlay").classList.remove('hidden');
+  dislayPlayerNamesModal();
+}, 10*60000);
+
+const dislayPlayerNamesModal = () => {
+  // debugger;
+  document.querySelector(".modal-1").classList.add('hidden');
+  document.querySelector(".overlay-1").classList.add('hidden');
+}
+
+btnSubmit.addEventListener("click", ()=> {
+  const name_1 = document.querySelector(".player_val_1").value;
+  const name_2 = document.querySelector(".player_val_2").value;
+  if(name_1 == "" && name_2 == ""){
+    document.querySelector(".player_val_1").style.border = '1px solid red'
+    document.querySelector(".player_val_2").style.border = '1px solid red'
+  } else {
+    document.querySelector("#name-0").textContent = name_1;
+    document.querySelector("#name-1").textContent = name_2;
+    document.querySelector(".modal-1").classList.add('hidden');
+    document.querySelector(".overlay-1").classList.add('hidden');
+  }
+})
+
+document.querySelector(".close-modal-1").addEventListener("click", ()=> {
+  document.querySelector(".modal-1").classList.add('hidden');
+    document.querySelector(".overlay-1").classList.add('hidden');
+})
+
+
+
+
 
 
 const init = () => {
