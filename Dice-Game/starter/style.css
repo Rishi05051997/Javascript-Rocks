@@ -278,6 +278,85 @@ i {
     cursor: pointer;
   }
 
+/* Modal-1 */
+/* modal*/
+
+
+.modal-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+  
+    background-color: white;
+    padding: 6rem;
+    border-radius: 5px;
+    color: #222;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+
+.modal-1 .form-container .btn-submit {
+    position: relative;
+    top: 1rem;
+    border: 1px solid red;
+    padding: 0.2rem;
+}
+
+.modal-1 .form-container label {
+    margin: 0.5rem auto;
+    font-size: 1.5rem;
+}
+
+.modal-1 .form-container input {
+    width: 50%;
+    margin: 0.5rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+
+.modal-1 .form-container {
+    display: flex;
+    flex-direction: column;
+}
+  
+  .overlay-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+
+  .close-modal-1 {
+    position: absolute;
+    top: -1rem;
+    left: 63rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  
+.show-modal-1 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.75rem 3.5rem;
+    margin: 5rem 2rem;
+    border: none;
+    background-color: #fff;
+    color: #444;
+    border-radius: 10rem;
+    cursor: pointer;
+  }
+
 /* Footer Start Here */
 
 .footer {
